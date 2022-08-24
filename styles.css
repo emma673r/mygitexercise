@@ -1,21 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(210, 219, 233);
+}
+
 header {
   display: flex;
   justify-content: center;
-  background-color: lightblue;
+  background-color: rgb(70, 91, 125);
+  color: white;
 }
+
 nav {
+  padding: 25px;
   width: 80vw;
-  background-color: #f88;
+  background-color: rgb(131, 155, 194);
 }
 
 nav ul {
   display: flex;
   list-style-type: none;
   justify-content: space-evenly;
+  background-color: inherit;
+}
+
+nav li,
+nav a {
+  background-color: inherit;
 }
 
 nav ul li + li::before {
   content: " ";
-  border-left: 1px solid black;
+  border-left: 1px solid white;
   padding-left: 8vw;
+}
+
+nav a {
+  color: white;
+  text-decoration: underline;
+}
+
+main {
+  /* padding: 4vh 15vw 0 15vw; */
+  padding-top: 4vh;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  padding-bottom: 50px;
+}
+
+figure {
+  display: flex;
+  place-content: center;
+}
+
+.text {
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.text p {
+  width: 50ch;
+}
+
+h1 {
+  font-size: 3em;
+  padding-bottom: 40px;
+}
+
+h2 {
+  padding-bottom: 20px;
+}
+h3 {
+  padding-bottom: 15px;
+}
+
+.project {
+  padding-bottom: 20px;
+}
+
+summary {
+  width: 40ch;
 }
